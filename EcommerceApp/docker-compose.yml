@@ -2,7 +2,6 @@ services:
   app:
     build: .
     volumes:
-      - "C:/Users/navee/OneDrive/Desktop/SAHITHI/Sahithi-projects/gitlab-projects/java-project/EcommerceApp/EcommerceApp/mydatabase.db:/usr/local/tomcat/webapps/mydatabase.db"
-      # - "./mydatabase.db:/app/mydatabase.db"
+      - "./mydatabase.db:/app/mydatabase.db"
     ports:
       - "8080:8080"
