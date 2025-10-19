@@ -25,47 +25,6 @@ url: https://github.com/sahithi-vs/java-sprint-boot-app
 - Tomcat v8.0+
 - SQLite Tools (Online or Offline Tool)
 
-### Steps To Import And Run The Project in Eclipse EE
-- In Eclipse
-- Click on File
-- Select Import
-- Select Projects from Git(with smart import) -> Next
-- Select Clone URI -> Next
-- In URI paste this url: https://github.com/swapnilbamble1438/EcommerceApp.git
-  -> Next
--  Now in Local Destination
-
--  proceed -> Next
-
-- select -> Search for nested projects
-- and select -> Detect and configure project natures options
-
-            Now only select EcommerceApp\EcommerceApp
-            -> Finish
-  
--  If everything goes right Project will get successfully imported
--  Now wait for few seconds for getting things properly loaded
--  Now open Project > open com.conn package > open DBConnect.java file.
-   Now make some changes in this file,
-   change Database file location/(mydatabase.db) file location/
-   change "conn" value,
-   like if it is:
-   
-   conn = DriverManager.getConnection("jdbc:sqlite:C:/Users/Swapnil/eclipse- 
-   workspace/Online Electronic Shopping/mydatabase.db");
-   
-   change the "conn" value/path according to your mydatabase.db file location.
-
-                 mydatabase.db file will get just inside Project folder only,
-                 Open Project folder you will get mydatabase.db file present.
-   
--  After doing changes save the DBConnect.java file.   
--  Right Click On Project > Run As > Run On Server > Select Tomcat V8.0+ > Next > Finish
--  Now Website will get open, if not, then try opening it manually in Browser,
-   Type Url: http://localhost:8082/EcommerceApp
--  Note: In Url put Port according to your server.
-  
-
 
 ### Some Screenshots of this Project:
 ![Home Page](a1.png)
@@ -238,30 +197,5 @@ url: https://github.com/sahithi-vs/java-sprint-boot-app
 
 - INSERT INTO usermaster VALUES ('admin','admin');
 
-### Now do some changes in Project
-- In Eclipse
-- Open Project > open com.conn package > open DBConnect.java file.
-   Now make some changes in this file,
-   change "conn" value,
-  like if it is
-   
-   conn = DriverManager.getConnection("jdbc:sqlite:C:/Users/Swapnil/eclipse- 
-   workspace/Online Electronic Shopping/mydatabase.db");
-   
-   change it to
-
-  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/DatabaseName","root","root");
-
-
-  Note: Put Address according to your Database Name and Password.
-
-  - Save the file
-
-  - Now try running Project and Check if the changes are done or not.
-
-   
-
-
-### Project Creator: Swapnil Bamble
 
 
